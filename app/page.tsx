@@ -8,45 +8,45 @@ export default function Home() {
       <Hero />
 
       {/* Comparison Table Section */}
-      <section className="py-24 px-6 lg:px-20 bg-gray-50 border-b border-gray-200">
-        <div className="container mx-auto">
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl font-bold mb-4 text-[var(--foreground)]">Traditional vs. Fiduciary: A Clear Choice</h2>
-            <p className="text-gray-600 text-lg">See the difference between a sales-driven model and a client-aligned partnership.</p>
+      <section className="responsive-section-padding bg-gray-50 border-b border-gray-200">
+        <div className="responsive-container">
+          <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
+            <h2 className="responsive-h2 mb-4 text-[var(--foreground)]">Traditional vs. Fiduciary: A Clear Choice</h2>
+            <p className="text-gray-600 responsive-body">See the difference between a sales-driven model and a client-aligned partnership.</p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-16">
             {/* SERENITY WEALTH (Left - Winner) */}
-            <div className="bg-white p-8 md:p-10 rounded-2xl shadow-xl border-2 border-[var(--brand-blue)]/10 relative overflow-hidden order-1 lg:order-1 lg:translate-x-4 z-10">
+            <div className="bg-white p-6 sm:p-8 lg:p-10 rounded-2xl shadow-xl border-2 border-[var(--brand-blue)]/10 relative overflow-hidden order-2 lg:order-1 lg:translate-x-4 z-10">
               <div className="absolute top-0 left-0 w-full h-2 bg-[var(--brand-blue)]"></div>
-              <h3 className="text-2xl font-bold mb-8 text-[var(--foreground)] flex items-center gap-3">
-                <span className="flex items-center justify-center w-8 h-8 rounded-full bg-green-100 text-green-600 text-sm">
+              <h3 className="responsive-h3 mb-6 sm:mb-8 text-[var(--foreground)] flex flex-col sm:flex-row items-start sm:items-center gap-3">
+                <span className="flex items-center justify-center w-8 h-8 rounded-full bg-green-100 text-green-600 text-sm flex-shrink-0">
                   ✓
                 </span>
-                Serenity Wealth
+                <span>Serenity Wealth</span>
               </h3>
-              <ul className="space-y-6">
+              <ul className="space-y-4 sm:space-y-6">
                 {[
                   "Fee-only (aligned with your success)",
                   "Transparent pricing (fixed or %)",
                   "Bespoke strategies (1:1 customization)",
                   "SEBI-mandated fiduciary duty"
                 ].map((item, idx) => (
-                  <li key={idx} className="flex items-start gap-4">
-                    <span className="text-green-500 font-bold text-xl mt-0.5">✅</span>
-                    <span className="text-[var(--foreground)] font-medium text-lg">{item}</span>
+                  <li key={idx} className="flex items-start gap-3 sm:gap-4">
+                    <span className="text-green-500 font-bold text-lg sm:text-xl mt-0.5 flex-shrink-0">✅</span>
+                    <span className="text-[var(--foreground)] font-medium text-base sm:text-lg">{item}</span>
                   </li>
                 ))}
               </ul>
             </div>
 
             {/* TRADITIONAL MODEL (Right) */}
-            <div className="bg-gray-100 p-8 md:p-10 rounded-2xl border border-gray-200 order-2 lg:order-2 lg:-translate-x-4 opacity-75 hover:opacity-100 transition-opacity">
-              <h3 className="text-2xl font-bold mb-8 text-gray-500 flex items-center gap-3">
-                <span className="flex items-center justify-center w-8 h-8 rounded-full bg-red-100 text-red-500 text-sm">
+            <div className="bg-gray-100 p-6 sm:p-8 lg:p-10 rounded-2xl border border-gray-200 order-1 lg:order-2 lg:-translate-x-4 opacity-75 hover:opacity-100 transition-opacity">
+              <h3 className="responsive-h3 mb-6 sm:mb-8 text-gray-500 flex flex-col sm:flex-row items-start sm:items-center gap-3">
+                <span className="flex items-center justify-center w-8 h-8 rounded-full bg-red-100 text-red-500 text-sm flex-shrink-0">
                   ✕
                 </span>
-                Traditional Model
+                <span>Traditional Model</span>
               </h3>
               <ul className="space-y-6">
                 {[
@@ -69,25 +69,25 @@ export default function Home() {
 
 
       {/* Offering Preview (Grid) */}
-      <section className="py-24 px-6 lg:px-20 bg-gray-50 border-y border-gray-200">
-        <div className="container mx-auto">
-          <div className="text-center max-w-2xl mx-auto mb-16">
-            <h2 className="text-3xl font-bold mb-4 text-[var(--foreground)]">Holistic Financial Governance</h2>
-            <p className="text-gray-600">Comprehensive strategies designed for complex portfolios.</p>
+      <section className="responsive-section-padding bg-gray-50 border-y border-gray-200">
+        <div className="responsive-container">
+          <div className="text-center max-w-2xl mx-auto mb-12 sm:mb-16">
+            <h2 className="responsive-h2 mb-4 text-[var(--foreground)]">Holistic Financial Governance</h2>
+            <p className="text-gray-600 responsive-body">Comprehensive strategies designed for complex portfolios.</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {[
-              { title: "Zero Day Planning", desc: "Bespoe investment strategies tailored to your risk profile and generational goals." },
+              { title: "Zero Day Planning", desc: "Bespoke investment strategies tailored to your risk profile and generational goals." },
               { title: "Estate Planning", desc: "Securing your legacy with tax-efficient transfer structures and trust management." },
               { title: "Family Office", desc: "Full-service concierge for UHNI families, from philanthropy to lifestyle management." }
             ].map((item, idx) => (
-              <article key={idx} className="bg-white p-8 border border-gray-100 hover:shadow-lg transition-shadow duration-300">
-                <h3 className="text-xl font-bold mb-4 text-[var(--foreground)]">{item.title}</h3>
-                <p className="text-gray-600 leading-relaxed mb-6">{item.desc}</p>
+              <article key={idx} className="bg-white p-6 sm:p-8 border border-gray-100 hover:shadow-lg transition-shadow duration-300 rounded-lg">
+                <h3 className="responsive-h3 mb-4 text-[var(--foreground)]">{item.title}</h3>
+                <p className="text-gray-600 leading-relaxed mb-6 min-h-[3rem]">{item.desc}</p>
                 <Link
                   href={idx === 2 ? "/advisory-plus" : "/advisory"}
-                  className="text-sm font-semibold text-[var(--brand-blue)] hover:text-[var(--foreground)] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--brand-blue)]"
+                  className="text-sm font-semibold text-[var(--brand-blue)] hover:text-[var(--foreground)] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--brand-blue)] rounded-sm py-1"
                   aria-label={`Learn more about ${item.title}`}
                 >
                   Learn Details
@@ -151,7 +151,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="aspect-square bg-gray-800 border border-gray-700 relative overflow-hidden group">
-                <Image src="/sahil.png" alt="Sahil Sadarangani" fill className="object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-500" />
+                <Image src="/sahil.jpg" alt="Sahil Sadarangani" fill className="object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-500" />
                 <div className="absolute bottom-0 left-0 p-4 z-10 w-full bg-gradient-to-t from-black/80 to-transparent">
                   <span className="font-bold text-white block">Sahil<br />Sadarangani</span>
                   <span className="text-gray-300 text-sm font-normal">Investment & Value</span>

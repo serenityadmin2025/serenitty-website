@@ -8,9 +8,10 @@ export default function AdvisoryPage() {
     return (
         <div className="bg-white min-h-screen">
             {/* Hero Section */}
-            <header className="py-20 px-6 lg:px-20 container mx-auto flex flex-col lg:flex-row items-center gap-12">
+            <header className="responsive-section-padding">
+                <div className="responsive-container mobile-stack gap-8 sm:gap-12">
                 <div className="lg:w-1/2">
-                    <h1 className="text-5xl lg:text-7xl font-bold mb-6 text-[var(--foreground)] leading-tight">
+                    <h1 className="responsive-h1 mb-4 sm:mb-6 text-[var(--foreground)] leading-tight">
                         Advisory: <br />
                         <span className="text-[var(--brand-blue)] text-3xl lg:text-4xl block leading-tight mt-2">
                             A Powerful, Focused Financial Plan.
@@ -35,6 +36,7 @@ export default function AdvisoryPage() {
                         />
                     </div>
                 </div>
+            </div>
             </header>
 
             {/* The "Why" Section */}

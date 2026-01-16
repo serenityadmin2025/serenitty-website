@@ -11,7 +11,7 @@ export default function TeamPage() {
         {
             name: "SAHIL SADARANGANI",
             role: "Investment & Value Creation",
-            image: "/sahil.png",
+            image: "/sahil.jpg",
             bio: "A serial entrepreneur with a diligent step-by-step approach to problem-solving. His mantra is: Deep Research-Deep Data Mining – Collation – Planning – Adaptive Execution, making him an expert in value creation be it for/of people, product and/or services. Sahil is a Calculus and Macro-economics major at Boston College. He is also an avid observer of Global Macros."
         }
     ];
