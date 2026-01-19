@@ -57,7 +57,7 @@ export default function AdvisoryPage() {
                         {[
                             { title: "Business Exit", icon: "🏢", desc: "Structuring liquidity events for tax efficiency." },
                             { title: "Succession", icon: "📜", desc: "Safeguarding sudden wealth for generations." },
-                            { title: "Sabbatical / Life Change", icon: "🗓️", desc: "Financial modeling for career pivots or time off." },
+                            { title: "Sabbatical / Career Pivot", icon: "🗓️", desc: "Financial modeling for career pivots or time off." },
                             { title: "Portfolio Audit", icon: "🔍", desc: "Unbiased stress-testing of your current investments." }
                         ].map((item, idx) => (
                             <div key={idx} className="bg-white p-6 border border-gray-200 rounded-xl hover:border-[var(--brand-blue)] hover:shadow-lg transition-all group">
