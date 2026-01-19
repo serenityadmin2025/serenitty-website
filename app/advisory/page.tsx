@@ -56,7 +56,7 @@ export default function AdvisoryPage() {
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                         {[
                             { title: "Business Exit", icon: "🏢", desc: "Structuring liquidity events for tax efficiency." },
-                            { title: "Inheritance", icon: "📜", desc: "Safeguarding sudden wealth for generations." },
+                            { title: "Succession", icon: "📜", desc: "Safeguarding sudden wealth for generations." },
                             { title: "Sabbatical / Life Change", icon: "🗓️", desc: "Financial modeling for career pivots or time off." },
                             { title: "Portfolio Audit", icon: "🔍", desc: "Unbiased stress-testing of your current investments." }
                         ].map((item, idx) => (
