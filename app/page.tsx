@@ -40,7 +40,7 @@ export default function Home() {
               </ul>
             </div>
 
-            {/* TRADITIONAL MODEL (Right) */}
+            {/* Others (Right) */}
             <div className="bg-gray-100 p-6 sm:p-8 lg:p-10 rounded-2xl border border-gray-200 order-1 lg:order-2 lg:-translate-x-4 opacity-75 hover:opacity-100 transition-opacity">
               <h3 className="responsive-h3 mb-6 sm:mb-8 text-gray-500 flex flex-col sm:flex-row items-start sm:items-center gap-3">
                 <span className="flex items-center justify-center w-8 h-8 rounded-full bg-red-100 text-red-500 text-sm flex-shrink-0">
