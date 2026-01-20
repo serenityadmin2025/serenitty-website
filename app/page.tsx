@@ -11,7 +11,7 @@ export default function Home() {
       <section className="responsive-section-padding bg-gray-50 border-b border-gray-200">
         <div className="responsive-container">
           <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
-            <h2 className="responsive-h2 mb-4 text-[var(--foreground)]">Traditional vs. Fiduciary: A Clear Choice</h2>
+            <h2 className="responsive-h2 mb-4 text-[var(--foreground)]">Serenity vs Others: A Clear Choice</h2>
             <p className="text-gray-600 responsive-body">See the difference between a sales-driven model and a client-aligned partnership.</p>
           </div>
 
